@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gunmalove-seoul.netlify.app/sitemap.xml
