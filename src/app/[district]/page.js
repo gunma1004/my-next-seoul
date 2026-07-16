@@ -280,7 +280,32 @@ export default function DistrictPage({ params }) {
           </div>
         </section>
       </main>
-
+<section className="bg-[#080808] py-8 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-4">
+          <h3 className="text-sm font-bold text-gray-400 mb-4">서울 전지역 출장마사지 바로가기</h3>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { id: 'gangnam', name: '강남구' }, { id: 'seocho', name: '서초구' }, { id: 'songpa', name: '송파구' },
+              { id: 'mapo', name: '마포구' }, { id: 'yongsan', name: '용산구' }, { id: 'junggu', name: '중구' },
+              { id: 'jongno', name: '종로구' }, { id: 'dongdaemun', name: '동대문구' }, { id: 'seongdong', name: '성동구' },
+              { id: 'gwangjin', name: '광진구' }, { id: 'gangdong', name: '강동구' }, { id: 'jungnang', name: '중랑구' },
+              { id: 'sungbuk', name: '성북구' }, { id: 'gangbuk', name: '강북구' }, { id: 'dobong', name: '도봉구' },
+              { id: 'nowon', name: '노원구' }, { id: 'eunpyeong', name: '은평구' }, { id: 'seodaemun', name: '서대문구' },
+              { id: 'yangcheon', name: '양천구' }, { id: 'gangseo', name: '강서구' }, { id: 'guro', name: '구로구' },
+              { id: 'geumcheon', name: '금천구' }, { id: 'yeongdeungpo', name: '영등포구' }, { id: 'dongjak', name: '동작구' },
+              { id: 'gwanak', name: '관악구' }
+            ].map((area) => (
+              <a 
+                key={area.id} 
+                href={`/${area.id}`} 
+                className="text-xs text-gray-500 hover:text-amber-500 transition-colors"
+              >
+                {area.name}출장마사지
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Footer */}
       <footer className="bg-[#080808] border-t border-white/5 py-12 text-center text-gray-500 text-xs mt-auto">
         COPYRIGHT &copy; 서울건마사랑 {currentDistrictName} 지점 ALL RIGHTS RESERVED.
