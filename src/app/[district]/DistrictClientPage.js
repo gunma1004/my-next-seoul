@@ -1,7 +1,6 @@
-// 파일 최상단의 "use client"를 지웠습니다! 이제 SEO 적용이 가능합니다.
-import DistrictClientPage from './DistrictClientPage'; // 클라이언트 컴포넌트를 불러옵니다.
+import DistrictClientPage from './DistrictClientPage';
 
-// 1. 서울시 25개 구 데이터 (SEO 생성 시 필요)
+// 1. 서울시 25개 구 데이터
 const seoulDistricts = {
   gangnam: { name: '강남구' },
   seocho: { name: '서초구' },
@@ -30,9 +29,12 @@ const seoulDistricts = {
   gwanak: { name: '관악구' }
 };
 
-// ⭐️ 여기서 SEO 메타데이터를 동적으로 생성합니다! (서버 측에서 실행됨)
+// ⭐️ 메타데이터 생성 (SEO) - params를 비동기로 받아야 합니다!
 export async function generateMetadata({ params }) {
-  const districtKey = params.district;
+  // Next.js 최신 버전(14, 15)에서는 params가 프로미스(Promise)일 수 있으므로 await를 사용합니다.
+  const resolvedParams = await params;
+  const districtKey = resolvedParams.district; 
+  
   const currentDistrictName = seoulDistricts[districtKey]?.name || '서울시';
 
   return {
@@ -42,9 +44,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// 이 파일은 껍데기 역할만 하고, 실제 화면은 DistrictClientPage가 그립니다.
+// ⭐️ 메인 컴포넌트 - 역시 params를 비동기로 받아서 클라이언트 컴포넌트에 넘깁니다!
 export default async function DistrictPage({ params }) {
-  // ⭐️ 비동기적으로 params를 풀어줍니다.
+  // 반드시 await를 사용해야 district 값을 정상적으로 추출할 수 있습니다.
   const resolvedParams = await params;
   const districtKey = resolvedParams.district;
 
