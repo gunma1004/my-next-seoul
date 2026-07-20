@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 전체 배경을 강제로 어두운 테마로 고정하는 안전장치 */
 body {
   background-color: #0c0c0c;
   color: #ffffff;
