@@ -151,15 +151,7 @@ export default function Page() {
   return (
     <div className="text-gray-200 min-h-screen flex flex-col pb-24 md:pb-0 bg-[#0c0c0c]">
       
-      {/* HTML Meta Tags (네이버 봇이 긁어가는 핵심 정보) */}
-      <title>{`서울출장마사지 No.1 서울건마사랑 | 24시 홈타이·스웨디시 ${currentDistrictName}`}</title>
-      <meta name="description" content={`서울 전지역 25분 홈케어 매칭! ${currentDistrictName} 전문 한국인 테라피스트가 방문하는 프리미엄 출장마사지, 홈타이, 스웨디시 전문 플랫폼 서울건마사랑.`} />
-      <meta name="keywords" content={`출장마사지, 서울출장마사지, 홈타이, 24시출장마사지, 스웨디시홈케어, 홈케어마사지, ${currentDistrictName}출장마사지, 서울건마사랑`} />
-      <meta property="og:title" content="서울출장마사지 No.1 서울건마사랑 | 24시 홈케어" />
-      <meta property="og:description" content="서울 전지역 25분 내 도착! 검증된 전문 테라피스트의 명품 출장마사지 서비스를 홈케어로 편안하게 경험해 보세요." />
-      <meta property="og:site_name" content="서울건마사랑" />
-
-      {/* SEO를 위한 JSON-LD 스크립트 (검색 결과에 풍부하게 노출되도록 도움) */}
+           {/* SEO를 위한 JSON-LD 스크립트 (검색 결과에 풍부하게 노출되도록 도움) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
