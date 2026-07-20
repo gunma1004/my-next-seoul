@@ -1,6 +1,6 @@
+// src/app/[district]/page.js
 import DistrictClientPage from './DistrictClientPage';
 
-// 서울시 25개 구 데이터
 const seoulDistricts = {
   gangnam: { name: '강남구' }, seocho: { name: '서초구' }, songpa: { name: '송파구' },
   gangdong: { name: '강동구' }, gwangjin: { name: '광진구' }, seongdong: { name: '성동구' },
@@ -20,8 +20,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${currentDistrictName} 출장마사지 No.1 | 24시 홈타이·스웨디시`,
-    description: `${currentDistrictName} 전지역 25분 홈케어 매칭! 전문 한국인 테라피스트가 방문하는 프리미엄 출장마사지.`,
-    keywords: [`${currentDistrictName}출장마사지`, `${currentDistrictName}홈타이`, `${currentDistrictName}스웨디시`, "24시출장마사지", "서울건마사랑"],
+    description: `${currentDistrictName} 전지역 25분 홈케어 매칭! 프리미엄 출장마사지.`,
   };
 }
 
