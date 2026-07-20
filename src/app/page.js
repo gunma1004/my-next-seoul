@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import "./globals.css";
+import "@/app/globals.css"; // ⭐️ @/ 기호는 src 폴더를 의미합니다. 이렇게 하면 경로 오류가 사라집니다.
+
 
 const seoulDistricts = {
   gangnam: { name: '강남구', dongs: ['역삼동', '논현동', '청담동', '신사동', '압구정동', '삼성동', '대치동'] },
