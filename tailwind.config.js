@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Next.js App Router를 사용하신다면 아래 경로가 반드시 있어야 합니다.
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", 
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    // 만약 src 폴더 기반 구조라면 아래 경로도 확인해 보세요.
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}", // ⭐️ 가장 중요한 부분! app 폴더 안의 디자인을 읽어오라는 뜻입니다.
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+    },
   },
   plugins: [],
-}
+};
