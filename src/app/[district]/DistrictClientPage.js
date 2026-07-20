@@ -1,6 +1,6 @@
 "use client";
 
-import "../../globals.css";
+import "../globals.css";
 
 const seoulDistricts = {
   gangnam: { name: '강남구', dongs: ['역삼동', '논현동', '청담동', '신사동', '압구정동', '삼성동', '대치동'] },

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from 'react';
 import "./globals.css";
 
 const seoulDistricts = {
