@@ -163,10 +163,7 @@ export default function DistrictPage({ params }) {
   return (
     <div className="text-gray-200 min-h-screen flex flex-col pb-24 md:pb-0 bg-[#0c0c0c]">
       
-      <title>{`${currentDistrictName} 출장마사지 No.1 | 24시 홈타이·스웨디시 서울건마사랑`}</title>
-      <meta name="description" content={`${currentDistrictName} 전지역 25분 홈케어 매칭! 전문 한국인 테라피스트가 방문하는 프리미엄 출장마사지.`} />
-      <meta name="keywords" content={`${currentDistrictName}출장마사지, ${currentDistrictName}홈타이, ${currentDistrictName}스웨디시, 24시출장마사지, 서울건마사랑`} />
-
+     
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Header */}
