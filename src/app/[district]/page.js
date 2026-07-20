@@ -1,5 +1,6 @@
-import "../globals.css";
+import DistrictClientPage from './DistrictClientPage';
 
+// 서울시 25개 구 데이터
 const seoulDistricts = {
   gangnam: { name: '강남구' }, seocho: { name: '서초구' }, songpa: { name: '송파구' },
   gangdong: { name: '강동구' }, gwangjin: { name: '광진구' }, seongdong: { name: '성동구' },
