@@ -1,4 +1,4 @@
-import DistrictClientPage from './DistrictClientPage';
+import "../globals.css";
 
 const seoulDistricts = {
   gangnam: { name: '강남구' }, seocho: { name: '서초구' }, songpa: { name: '송파구' },
