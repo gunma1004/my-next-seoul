@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ⭐️ 이것이 Tailwind v4의 새로운 마법의 주문입니다! */
+@import "tailwindcss";
 
-/* 전체 배경을 강제로 어두운 테마로 고정하는 안전장치 */
 body {
   background-color: #0c0c0c;
   color: #ffffff;
