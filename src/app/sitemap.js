@@ -1,6 +1,6 @@
 export default function sitemap() {
   // 본인의 실제 넷플리파이 주소 (나중에 유료 도메인을 사면 여기를 바꿔주세요)
-  const baseUrl = 'https://gunmalove-seoul.netlify.app';
+  const baseUrl = 'https://gunmaseoullove.shop';
 
   // 25개 구 영문 주소 목록
   const districts = [

@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "서울건마사랑 | 24시 출장마사지",
     description: "서울 전지역 25분 내 방문! 전문 테라피스트가 찾아가는 프리미엄 홈케어 서비스.",
-    url: "https://gunmalove-seoul.netlify.app", 
+    url: "https://gunmaseoullove.shop", 
     siteName: "서울건마사랑",
     // ⭐️ 경고를 없애기 위한 핵심: 공유 시 보여질 대표 이미지 경로
     images: [
