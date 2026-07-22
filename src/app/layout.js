@@ -4,10 +4,10 @@ export const metadata = {
   title: "서울건마사랑 | 24시 출장마사지",
   description: "서울 전지역 25분 내 방문 홈케어",
   
-  // ⭐️ 네이버 서치어드바이저 소유 확인 메타 태그
+  // ⭐️ 네이버 서치어드바이저 소유 확인 메타 태그 적용
   verification: {
     other: {
-      'naver-site-verification': '<meta name="naver-site-verification" content="ee17c5aaaff23378add5d10e90a77a12944bc5aa" />',
+      'naver-site-verification': 'ee17c5aaaff23378add5d10e90a77a12944bc5aa',
     },
   },
 
